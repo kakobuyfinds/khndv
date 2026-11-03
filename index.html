@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>iTaoBuy spreadsheet: bewuster kiezen, beter vergelijken | CAFANS</title>
+  <meta name="description" content="Gebruik een iTaoBuy spreadsheet met meer overzicht. Bekijk categorieën en lees hoe je productlinks, maten, QC-foto’s en totale kosten controleert.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#56223e">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="CAFANS">
+  <meta property="og:title" content="iTaoBuy spreadsheet — van inspiratie naar een onderbouwde keuze">
+  <meta property="og:description" content="Een Nederlandstalige keuzehulp voor productlinks, pasvorm, foto’s en kosten. Begin bij de categorie die je zoekt.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="iTaoBuy spreadsheet | De praktische keuzehulp">
+  <meta name="twitter:description" content="Bekijk categorieën en controleer de gegevens die bij een productkeuze het verschil maken.">
+  <link rel="preconnect" href="https://static.nike.com" crossorigin>
+  <!-- Bestandsnaam: index.html -->
+  <!-- Een canonical en og:url worden pas toegevoegd zodra de eigen publicatie-URL bekend is. -->
+  <!--
+    Zoekonderzoek voor dit oorspronkelijke Nederlandstalige artikel:
+    Zoekterm: iTaoBuy spreadsheet. Tien afzonderlijke websites geraadpleegd.
+    Google kon niet rechtstreeks worden uitgelezen; dit is geen bevestigde
+    lijst van de eerste tien Google-resultaten en geen rangorde.
+
+    Bron | waargenomen zoekthema | SEO-inhoud in eigen woorden:
+    https://www.itaobuysheets.com/ | productvondsten, QC | categorieën vroeg op de pagina.
+    https://itaobuy.co/ | spreadsheet, directe links | korte voordelen en veelgestelde vragen.
+    https://itaobuywithqc.com/ | QC-foto’s, productlinks | definitie, categorieën en aankoopvragen.
+    https://itaobuybestsheet.com/ | spreadsheet, Taobao, Weidian | zoeken en brede categorie-indeling.
+    https://linktr.ee/itaobuyspreadsheet | spreadsheetlinks | compacte toegang tot verzamelingen.
+    https://itaobuy-spreadsheet.net/ | product-ID, vergelijken | onderzoeksstappen en categorieën.
+    https://itaobuy.blog/guides/how-to-use-itaobuy-spreadsheet/ | beginnersgids | één product onderzoeken.
+    https://usfansyupoo.com/agents/itaobuy/ | bronadres, varianten | oorspronkelijke gegevens bewaren.
+    https://itaobuyspreadsheet.co/ | links, QC, verzending | bron, bewijs en voorwaarden controleren.
+    https://rep.tools/guides/itaobuy-spreadsheet | verzamellijsten | herkomst van links en bruikbaarheid.
+
+    Aantallen, verificatieclaims, prijzen en voordelen van deze bronnen zijn niet overgenomen.
+    Secundaire thema’s: iTaoBuy koopgids; iTaoBuy productoverzicht;
+    iTaoBuy maattabel; iTaoBuy QC-foto’s; iTaoBuy verzendkosten.
+    De afbeeldingen zijn visuele referenties, geen gecontroleerde CAFANS-producten.
+  -->
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #292332;
+      --muted: #625b6c;
+      --wine: #56223e;
+      --lavender: #f1eef9;
+      --pink: #f9e6eb;
+      --line: #ded8e7;
+      --white: #fff;
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--white);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-underline-offset: 4px;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    a:focus-visible,
+    summary:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #8c45b4;
+      outline-offset: 5px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1, h2, h3, p, figure { margin: 0; }
+
+    h1, h2, h3 {
+      line-height: 1.13;
+      letter-spacing: -.035em;
+    }
+
+    h1 {
+      font-size: clamp(2.65rem, 6.7vw, 5.9rem);
+      max-width: 1050px;
+      font-weight: 750;
+    }
+
+    h2 { font-size: clamp(1.8rem, 3.2vw, 3rem); }
+    h3 { font-size: 1.35rem; }
+    p + p { margin-top: 1rem; }
+
+    .wrap {
+      width: min(1180px, calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .72rem;
+      font-weight: 750;
+      color: var(--wine);
+    }
+
+    .muted { color: var(--muted); }
+    .small { font-size: .85rem; }
+    .top { border-bottom: 1px solid var(--line); }
+
+    .masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding-block: 20px;
+    }
+
+    .logo {
+      font-weight: 850;
+      font-size: 1.2rem;
+      text-decoration: none;
+      letter-spacing: -.04em;
+    }
+
+    .logo span { color: var(--wine); }
+
+    .masthead nav {
+      display: flex;
+      gap: 22px;
+      font-size: .85rem;
+    }
+
+    .masthead nav a { text-decoration: none; }
+
+    .intro {
+      padding: 48px 0 30px;
+      background: var(--lavender);
+    }
+
+    .intro .eyebrow { margin-bottom: 18px; }
+
+    .intro h1 em {
+      font-style: normal;
+      color: var(--wine);
+    }
+
+    .intro .lead {
+      max-width: 720px;
+      font-size: 1.12rem;
+      margin-top: 22px;
+      color: #52485e;
+    }
+
+    .intro-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid #d7cfe4;
+      font-size: .78rem;
+      color: var(--muted);
+    }
+
+    .category-section { padding: 28px 0 32px; }
+
+    .section-label {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .section-label h2 {
+      font-size: 1.12rem;
+      letter-spacing: 0;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 9px;
+    }
+
+    .categories a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      min-height: 58px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: .84rem;
+      font-weight: 650;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .categories a:hover {
+      background: var(--lavender);
+      border-color: #aa8bb9;
+    }
+
+    .categories a span {
+      color: #906780;
+      font-size: 1rem;
+    }
+
+    .visual { padding: 4px 0 52px; }
+
+    .visual-grid {
+      display: grid;
+      grid-template-columns: 2.05fr 1fr 1fr;
+      grid-template-rows: repeat(2, 220px);
+      gap: 12px;
+    }
+
+    .visual-grid figure {
+      border-radius: var(--radius);
+      background: #f5f5f5;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .visual-grid .main-photo { grid-row: span 2; }
+
+    .visual-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .visual-grid figcaption {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .96);
+      font-size: .7rem;
+      color: #443948;
+    }
+
+    .visual-grid .main-photo figcaption {
+      font-size: .82rem;
+      padding: 12px;
+    }
+
+    .visual-note {
+      margin-top: 13px;
+      max-width: 920px;
+      font-size: .78rem;
+      color: var(--muted);
+    }
+
+    .answer {
+      background: var(--wine);
+      color: #fff;
+      padding: 32px;
+      border-radius: var(--radius);
+      display: grid;
+      grid-template-columns: .85fr 1.3fr;
+      gap: 32px;
+      margin-bottom: 58px;
+    }
+
+    .answer .eyebrow { color: #edc7de; }
+
+    .answer h2 {
+      font-size: 1.8rem;
+      margin-top: 12px;
+    }
+
+    .answer p { color: #f1e4ed; }
+
+    .answer a {
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: 700;
+    }
+
+    .guide {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 52px;
+      padding-bottom: 60px;
+    }
+
+    .guide-intro { padding-top: 4px; }
+    .guide-intro h2 { margin: 12px 0 20px; }
+
+    .guide-intro p {
+      font-size: .94rem;
+      color: var(--muted);
+    }
+
+    .guide-intro .issue {
+      font-size: 3.6rem;
+      line-height: 1;
+      color: #c6b3d2;
+      font-weight: 800;
+      letter-spacing: -.09em;
+      margin-bottom: 22px;
+    }
+
+    .essays {
+      display: grid;
+      gap: 0;
+    }
+
+    .essay {
+      padding: 26px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .essay:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .essay-head {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 15px;
+    }
+
+    .num {
+      font-size: .75rem;
+      letter-spacing: .08em;
+      color: var(--wine);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .essay p { color: #514959; }
+
+    .essay strong {
+      font-weight: 650;
+      color: var(--ink);
+    }
+
+    .note {
+      padding: 14px 18px;
+      border-left: 3px solid #ab7195;
+      background: #faf6fa;
+      margin-top: 16px;
+      font-size: .9rem;
+    }
+
+    .decision {
+      background: var(--lavender);
+      padding: 46px 0;
+    }
+
+    .decision-heading {
+      max-width: 700px;
+      margin-bottom: 28px;
+    }
+
+    .decision-heading p {
+      margin-top: 14px;
+      color: var(--muted);
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+      border: 1px solid #d7cee2;
+      border-radius: 12px;
+      background: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: .9rem;
+    }
+
+    caption {
+      text-align: left;
+      padding: 16px 20px;
+      font-size: .83rem;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+    }
+
+    th, td {
+      vertical-align: top;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      background: #f8f6fc;
+      font-size: .8rem;
+    }
+
+    tbody tr:last-child td { border-bottom: 0; }
+
+    td:first-child {
+      font-weight: 700;
+      color: var(--wine);
+      width: 19%;
+    }
+
+    .formula {
+      margin-top: 20px;
+      font-size: .9rem;
+      color: #554861;
+    }
+
+    .faq { padding-block: 58px; }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .75fr 1.5fr;
+      gap: 55px;
+    }
+
+    .faq-intro p {
+      margin-top: 18px;
+      color: var(--muted);
+    }
+
+    details { border-bottom: 1px solid var(--line); }
+
+    summary {
+      cursor: pointer;
+      font-weight: 680;
+      padding: 18px 28px 18px 0;
+      line-height: 1.5;
+    }
+
+    details p {
+      padding: 0 0 20px;
+      color: #554c5e;
+      font-size: .95rem;
+    }
+
+    .ending {
+      background: var(--pink);
+      border-radius: var(--radius);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      padding: 32px;
+      margin-bottom: 45px;
+    }
+
+    .ending h2 {
+      font-size: 1.7rem;
+      margin-bottom: 9px;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--wine);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .9rem;
+      border-radius: 9px;
+      padding: 13px 20px;
+      white-space: nowrap;
+    }
+
+    .button:hover { background: #743457; }
+
+    .footer {
+      padding-block: 25px 34px;
+      border-top: 1px solid var(--line);
+      font-size: .76rem;
+      color: var(--muted);
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      margin-bottom: 14px;
+    }
+
+    .footer p { max-width: 960px; }
+
+    .skip {
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      transform: translateY(-170%);
+      z-index: 10;
+      background: white;
+      border: 2px solid var(--wine);
+      border-radius: 6px;
+      padding: 10px 15px;
+      color: var(--wine);
+      font: inherit;
+    }
+
+    .skip:focus { transform: translateY(0); }
+
+    @media (min-width: 900px) {
+      .guide-intro {
+        align-self: start;
+        position: sticky;
+        top: 24px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .categories { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .visual-grid { grid-template-rows: repeat(2, 180px); }
+      .guide {
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 28px;
+      }
+      .answer { gap: 24px; }
+      .faq-layout { gap: 28px; }
+    }
+
+    @media (max-width: 600px) {
+      .wrap { width: calc(100% - 32px); }
+      .masthead { padding-block: 16px; }
+      .masthead nav {
+        gap: 15px;
+        font-size: .75rem;
+      }
+      .masthead nav a:first-child { display: none; }
+      .intro { padding-top: 32px; }
+      .intro .lead { font-size: 1rem; }
+      .intro-meta {
+        flex-direction: column;
+        gap: 4px;
+      }
+      .categories { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .categories a {
+        font-size: .78rem;
+        padding: 10px;
+        min-height: 56px;
+      }
+      .section-label {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .visual { padding-bottom: 30px; }
+      .visual-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 190px 190px;
+        gap: 9px;
+      }
+      .visual-grid .main-photo {
+        grid-row: auto;
+        grid-column: span 2;
+      }
+      .visual-grid figcaption {
+        font-size: .65rem;
+        padding: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+      }
+      .answer {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 24px;
+        margin-bottom: 38px;
+      }
+      .guide {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-bottom: 38px;
+      }
+      .guide-intro .issue { display: none; }
+      .guide-intro h2 {
+        max-width: 300px;
+        margin-bottom: 12px;
+      }
+      .guide-intro p { max-width: 440px; }
+      .essay { padding-block: 23px; }
+      .essay h3 { font-size: 1.25rem; }
+      .decision { padding-block: 32px; }
+      th, td {
+        padding: 12px;
+        min-width: 145px;
+      }
+      .faq { padding-block: 38px; }
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .ending {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 24px;
+        margin-bottom: 30px;
+      }
+      .ending .button { width: 100%; }
+      .footer-top {
+        flex-direction: column;
+        gap: 9px;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      a { transition: background-color .15s, border-color .15s; }
+    }
+
+    @media print {
+      .masthead nav, .skip, .ending { display: none; }
+      body { font-size: 11pt; }
+      .guide, .faq-layout, .answer { display: block; }
+      .guide-intro { position: static; }
+      .visual-grid {
+        height: 250px;
+        grid-template-rows: repeat(2, 119px);
+      }
+      details p { display: block; }
+      .wrap { width: 100%; }
+      h2, h3 { break-after: avoid; }
+      figure, tr { break-inside: avoid; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "#webpagina",
+        "name": "iTaoBuy spreadsheet: bewuster kiezen, beter vergelijken",
+        "inLanguage": "nl",
+        "description": "Een Nederlandstalige keuzehulp voor productlinks, pasvorm, QC-foto’s en totale kosten.",
+        "about": {
+          "@type": "Thing",
+          "name": "iTaoBuy spreadsheet"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "#keuzehulp",
+        "headline": "Zes notities voor een betere productkeuze",
+        "inLanguage": "nl",
+        "mainEntityOfPage": {
+          "@id": "#webpagina"
+        },
+        "description": "Praktische artikelen over productoverzichten, koopkeuzes, maattabellen, QC-foto’s, verzendkosten en accessoires.",
+        "articleSection": [
+          "Productoverzicht",
+          "Koopgids",
+          "Maattabel",
+          "QC-foto’s",
+          "Verzendkosten",
+          "Accessoires"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#vragen",
+        "inLanguage": "nl",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Wat is een iTaoBuy spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Een iTaoBuy spreadsheet is een verzameling productverwijzingen voor mensen die via iTaoBuy willen winkelen. Zo’n overzicht helpt bij vergelijken, maar bevestigt geen voorraad, kwaliteit of actuele prijs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan ik op deze pagina bestellen of een spreadsheet downloaden?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nee. Deze pagina bevat een keuzehulp en categorie-ingangen naar CAFANS. Er is hier geen betaalomgeving en geen downloadbare spreadsheet met gecontroleerde productgegevens."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hoe controleer ik of een productlink nog klopt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vergelijk het product-ID, de verkoper, de afbeeldingen en de gekozen variant met je oorspronkelijke notitie. Een werkende link alleen bewijst niet dat hetzelfde artikel nog beschikbaar is."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bewijzen QC-foto’s dat een merkartikel echt is?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nee. QC-foto’s kunnen zichtbare details en afwijkingen tonen, maar bewijzen geen authenticiteit, samenstelling of duurzaamheid. Vraag om aanvullende herkomstinformatie als echtheid belangrijk is."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hoe vergelijk ik de totale kosten?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tel de productprijs, binnenlandse bezorging, eventuele servicekosten, internationale verzending en toepasselijke belastingen of afhandelingskosten op. Gebruik dezelfde bestemming en valuta en controleer welke bedragen al inbegrepen zijn."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is deze pagina officieel verbonden aan iTaoBuy of de afgebeelde merken?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nee. Dit is een onafhankelijke informatiepagina. De merkfoto’s zijn visuele referenties en betekenen geen officiële samenwerking, authenticiteitscontrole of beschikbaarheid via CAFANS."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/khndv/">
+</head>
+<body>
+  <button class="skip" type="button" onclick="document.getElementById('inhoud').focus()">Ga naar de inhoud</button>
+
+  <header class="top">
+    <div class="wrap masthead">
+      <a class="logo" href="https://www.cafans.com" aria-label="CAFANS startpagina">cafans<span>.com</span></a>
+      <nav aria-label="Hoofdnavigatie">
+        <a href="https://www.cafans.com">Producten ontdekken</a>
+        <a href="https://www.cafans.com">Bekijk CAFANS ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhoud" tabindex="-1">
+    <section class="intro" aria-labelledby="paginatitel">
+      <div class="wrap">
+        <p class="eyebrow">De keuze-editie / Nederlandstalige gids</p>
+        <h1 id="paginatitel">iTaoBuy spreadsheet.<br><em>Kijk verder dan de foto.</em></h1>
+        <p class="lead">Een goede vondst begint met inspiratie. Een goede keuze vraagt om meer: de juiste productlink, een passende maat en zicht op wat je uiteindelijk betaalt. Hier maak je die stap overzichtelijk.</p>
+        <div class="intro-meta">
+          <span>Onafhankelijke keuzehulp · Geen betaalomgeving</span>
+          <span>Schoenen / kleding / hoofddeksels / accessoires</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap category-section" aria-labelledby="categorie-titel">
+      <div class="section-label">
+        <h2 id="categorie-titel">Begin bij jouw categorie</h2>
+        <p class="small muted">Deze ingangen openen de bijbehorende CAFANS-categorie.</p>
+      </div>
+      <nav class="categories" aria-label="Productcategorieën">
+        <a href="https://cafans.com/category-911-Shoes.html">Shoes <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies/Sweaters <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-914-Jackets.html">Jackets <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-915-Pants%2FShorts.html">Pants/Shorts <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-916-Headwear.html">Headwear <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-917-Sets.html">Sets <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underwear/underpants <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-919-Jersey.html">Jersey <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-920-Accessories.html">Accessories <span aria-hidden="true">↗</span></a>
+      </nav>
+    </section>
+
+    <section class="wrap visual" aria-label="Visuele referenties voor schoenen, kleding en accessoires">
+      <div class="visual-grid">
+        <figure class="main-photo">
+          <img
+            src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco%2Cc_scale%2Cw_800%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/2f5790e7-be82-4e5a-a919-ca33d9cf9f64/NIKE%2BP-6000%2BPRM.png"
+            width="800"
+            height="1000"
+            alt="Nike P-6000 sneaker met lichtgrijze en groene panelen, van opzij gefotografeerd"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async">
+          <figcaption>
+            <span>Nike / P-6000</span>
+            <span>Vorm &amp; pasvorm</span>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://assets.christiandior.com/is/image/diorprod/643J634A3282C988_E01?%24default_GH%24=&amp;crop=402%2C160%2C1223%2C1680&amp;extend=0%2C0%2C0%2C250&amp;hei=650&amp;scale=0.875&amp;wid=600"
+            width="600"
+            height="650"
+            alt="Zwart Dior T-shirt met korte mouwen en wit Dior-borduursel op de borst"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <span>Dior / T-shirt</span>
+            <span>Snit</span>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://media.gucci.com/style/DarkGray_Center_0_0_980x980/1761588037/858612_3HBIZ_1079_008_100_0000_Light-reversible-gg-canvas-bucket-hat.jpg"
+            width="980"
+            height="980"
+            alt="Omkeerbare Gucci vissershoed met zwart en beige GG-canvas"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <span>Gucci / Hoed</span>
+            <span>Omtrek</span>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://assets.hermes.com/is/image/hermesproduct/bracciale-tonight--500041FJ0X-worn-1-0-0-1000-1000_g.jpg"
+            width="1000"
+            height="1000"
+            alt="Hermès Tonight leren armband met metalen H-sluiting, gedragen om de pols"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <span>Hermès / Armband</span>
+            <span>Sluiting</span>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://shop.rebag.com/cdn/shop/products/165452-3_20Louis_20Vuitton_20Women_s_20Bomber_20Jacket_20Limited_20Edition_20Since_201854_20Monogram_20Jacquard_20Wool_20Blend_2D_0002_grande.jpg?v=1662143000"
+            width="600"
+            height="600"
+            alt="Zwart Louis Vuitton Since 1854 bomberjack met jacquardmotief op een witte paspop"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <span>Louis Vuitton / Jack</span>
+            <span>Details</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="visual-note">Beeldreferenties: Nike, Dior, Gucci en Hermès via hun beeldservers; Louis Vuitton via Rebag. De foto’s illustreren vormen en productdetails. Ze zijn geen bewijs van voorraad, authenticiteit of een overeenkomst met een product op CAFANS.</p>
+    </section>
+
+    <aside class="wrap answer" aria-labelledby="kort-antwoord">
+      <div>
+        <p class="eyebrow">Het korte antwoord</p>
+        <h2 id="kort-antwoord">Wat haal je uit een spreadsheet?</h2>
+      </div>
+      <div>
+        <p>Een iTaoBuy spreadsheet verzamelt productverwijzingen om je zoektocht te ordenen. Gebruik zo’n lijst als vertrekpunt: controleer daarna de oorspronkelijke aanbieding, de exacte uitvoering en de actuele voorwaarden. Deze gids helpt je daarbij; de categorie-ingangen leiden naar CAFANS.</p>
+        <a href="https://www.cafans.com">Ontdek het productoverzicht bij CAFANS ↗</a>
+      </div>
+    </aside>
+
+    <article class="wrap guide" aria-labelledby="gids-titel">
+      <header class="guide-intro">
+        <p class="issue" aria-hidden="true">06</p>
+        <p class="eyebrow">Praktische artikelen</p>
+        <h2 id="gids-titel">Zes notities voor een betere productkeuze</h2>
+        <p>Van een bewaarde link naar een vergelijking die je later nog begrijpt. Werk één onzekerheid tegelijk weg.</p>
+      </header>
+
+      <div class="essays">
+        <section class="essay" aria-labelledby="notitie-een">
+          <div class="essay-head">
+            <span class="num">01</span>
+            <h3 id="notitie-een">iTaoBuy productoverzicht: bewaar de bron</h3>
+          </div>
+          <p>Wil je <strong>productlinks overzichtelijk bewaren</strong>, noteer dan het oorspronkelijke adres en het product-ID naast je eigen omschrijving. Als je <strong>Taobao-links controleert</strong> of <strong>Weidian-producten vergelijkt</strong>, is de bestemming belangrijker dan de verkorte linktekst. Kijk of de verkoper en de gekozen uitvoering nog overeenkomen met je notitie.</p>
+          <p>Moet je <strong>een verlopen productlink herkennen</strong>? Een foutmelding is duidelijk, maar een doorverwijzing naar een ander artikel is dat minder. Om <strong>een product-ID terug te vinden</strong>, controleer je daarom ook de oorspronkelijke aanbieding; vergelijk daarna de foto’s en de opties. Een vergelijkbare titel kan bij een andere aanbieding horen.</p>
+          <p class="note">Bewaar per kandidaat: bronadres, product-ID, verkoper, uitvoering en de datum waarop je de gegevens hebt bekeken.</p>
+        </section>
+
+        <section class="essay" aria-labelledby="notitie-twee">
+          <div class="essay-head">
+            <span class="num">02</span>
+            <h3 id="notitie-twee">iTaoBuy koopgids: kies eerst je gebruik</h3>
+          </div>
+          <p>Begin bij wat je nodig hebt. Bij <strong>sneakers voor dagelijks gebruik</strong> kijk je bijvoorbeeld naar pasvorm, zool en onderhoud. Bij <strong>een hoodie met de juiste pasvorm</strong> maken schouderbreedte en lengte het verschil. Wil je <strong>een T-shirt op stofgewicht beoordelen</strong>, zoek dan naar een opgegeven gewicht en samenstelling; een foto vertelt dat niet.</p>
+          <p>Om <strong>een jas op laagjes af te stemmen</strong>, vergelijk je de binnenruimte met kleding die je eronder draagt. Controleer <strong>een kledingenset per onderdeel</strong>: behandel bovenstuk en broek afzonderlijk. Eén maatlabel hoeft niet voor beide onderdelen dezelfde pasvorm op te leveren.</p>
+        </section>
+
+        <section class="essay" aria-labelledby="notitie-drie">
+          <div class="essay-head">
+            <span class="num">03</span>
+            <h3 id="notitie-drie">iTaoBuy maattabel: maak maten vergelijkbaar</h3>
+          </div>
+          <p>Wil je <strong>EU-schoenmaten met voetlengte vergelijken</strong>, begin dan met de meetmethode van de verkoper. Voetlengte, binnenzoollengte en een maatlabel zijn verschillende gegevens. Om <strong>een borstbreedte plat te meten</strong>, leg je een goed passend kledingstuk vlak neer. Noteer of een tabel een halve breedte of de volledige omtrek vermeldt.</p>
+          <p>Kies je <strong>een broek op taille en binnenbeen</strong>, dan heb je beide maten nodig. Wil je <strong>een ruime snit met een normale snit vergelijken</strong>, gebruik dan werkelijke kledingmaten in plaats van alleen S, M of L. Om <strong>meetafwijkingen in een maattabel te begrijpen</strong>, houd je rekening met de vermelde tolerantie en de manier van meten.</p>
+          <p class="note">Ontbreekt een beslissende maat? Vraag die eerst op. Een extra meting is bruikbaarder dan een gok op basis van een modelbeeld.</p>
+        </section>
+
+        <section class="essay" aria-labelledby="notitie-vier">
+          <div class="essay-head">
+            <span class="num">04</span>
+            <h3 id="notitie-vier">iTaoBuy QC-foto’s: kijk gericht</h3>
+          </div>
+          <p>QC staat voor kwaliteitscontrole. Ga je <strong>QC-foto’s met verkopersfoto’s vergelijken</strong>, let dan eerst op de exacte uitvoering en het artikel waarop de beelden betrekking hebben. Bij <strong>kleurverschillen op productfoto’s</strong> houd je rekening met licht en scherminstellingen. Wil je <strong>stiksels op detailfoto’s bekijken</strong>, dan heb je een scherpe opname van de betreffende plek nodig.</p>
+          <p>Wanneer je <strong>labels en uitvoeringen controleert</strong>, vergelijk je kenmerken met de omschrijving. Wil je <strong>extra foto’s van een product aanvragen</strong>, formuleer dan een concrete vraag, zoals een opname van de sluiting of een meting naast een liniaal. Foto’s laten zichtbare details zien; ze stellen geen materiaalonderzoek of authenticiteitscontrole voor.</p>
+        </section>
+
+        <section class="essay" aria-labelledby="notitie-vijf">
+          <div class="essay-head">
+            <span class="num">05</span>
+            <h3 id="notitie-vijf">iTaoBuy verzendkosten: vergelijk dezelfde basis</h3>
+          </div>
+          <p>Om <strong>totale aankoopkosten te berekenen</strong>, heb je meer nodig dan het bedrag naast een product. Neem de <strong>binnenlandse bezorgkosten van een product</strong> mee en controleer welke diensten apart worden berekend. Als je <strong>pakketgewicht en volumegewicht vergelijkt</strong>, kijk dan welke berekeningswijze de gekozen vervoerder gebruikt.</p>
+          <p>Wil je <strong>verzendopties naar Nederland vergelijken</strong>, gebruik dan dezelfde bestemming, inhoud en pakketgegevens. Controleer de <strong>btw en afhandelingskosten bij verzending</strong>: lees wat inbegrepen is en wat later kan volgen. Voor België of een andere bestemming maak je een aparte vergelijking; voorwaarden en beschikbare routes kunnen verschillen.</p>
+          <p class="note">Een kostenraming blijft een raming totdat pakketgegevens, route en toepasselijke kosten zijn bevestigd.</p>
+        </section>
+
+        <section class="essay" aria-labelledby="notitie-zes">
+          <div class="essay-head">
+            <span class="num">06</span>
+            <h3 id="notitie-zes">Accessoires: kleine afmetingen, groot verschil</h3>
+          </div>
+          <p>Kies je <strong>een hoed op hoofdomtrek</strong>, meet dan waar de hoed wordt gedragen en kijk of de maat verstelbaar is. Bij <strong>een armband voor jouw polsomtrek</strong> controleer je daarnaast de binnenmaat en gewenste bewegingsruimte. Ga je <strong>een sieradensluiting beoordelen</strong>, vraag dan een beeld waarop het sluitmechanisme herkenbaar is.</p>
+          <p>Om <strong>het materiaal van sieraden te controleren</strong>, heb je een duidelijke specificatie nodig, zeker bij gevoeligheid voor bepaalde metalen. Lees ook de <strong>retourvoorwaarden voor accessoires</strong>: let op uitzonderingen, termijnen en de staat waarin een artikel moet worden teruggestuurd. Een merknaam op een foto vervangt die informatie niet.</p>
+        </section>
+      </div>
+    </article>
+
+    <section class="decision" aria-labelledby="controle-titel">
+      <div class="wrap">
+        <div class="decision-heading">
+          <p class="eyebrow">Van notitie naar besluit</p>
+          <h2 id="controle-titel">Wat weet je al, en wat ontbreekt?</h2>
+          <p>Deze vergelijking werkt voor schoenen, kleding en accessoires. Vul open vragen aan voordat je een kandidaat als passend beschouwt.</p>
+        </div>
+
+        <div class="table-scroll" role="region" aria-label="Controlepunten voor een productkeuze" tabindex="0">
+          <table>
+            <caption>Een compact controleblad voor je eigen productselectie</caption>
+            <thead>
+              <tr>
+                <th scope="col">Onderdeel</th>
+                <th scope="col">Wat je vastlegt</th>
+                <th scope="col">Wanneer je verder uitzoekt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Identiteit</td>
+                <td>Bronadres, product-ID, verkoper en variant.</td>
+                <td>De link opent een ander artikel of de gewenste optie ontbreekt.</td>
+              </tr>
+              <tr>
+                <td>Pasvorm</td>
+                <td>Afmetingen, eenheid en meetmethode.</td>
+                <td>Een essentieel meetpunt ontbreekt of alleen een maatletter is vermeld.</td>
+              </tr>
+              <tr>
+                <td>Materiaal</td>
+                <td>Opgegeven samenstelling en relevante details.</td>
+                <td>De tekst blijft vaag of beelden en omschrijving spreken elkaar tegen.</td>
+              </tr>
+              <tr>
+                <td>Foto’s</td>
+                <td>Welke uitvoering zichtbaar is en welke details herkenbaar zijn.</td>
+                <td>De beelden horen mogelijk bij een andere variant of tonen het detail niet.</td>
+              </tr>
+              <tr>
+                <td>Voorwaarden</td>
+                <td>Retourmogelijkheid, termijnen en kostenverdeling.</td>
+                <td>Je kunt niet vaststellen wat er gebeurt bij een probleem.</td>
+              </tr>
+              <tr>
+                <td>Totaalbedrag</td>
+                <td>Alle bekende kosten in dezelfde valuta en voor dezelfde bestemming.</td>
+                <td>Een kostenpost ontbreekt of een raming wordt als vast bedrag gepresenteerd.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="formula"><strong>Kostenoverzicht:</strong> product + binnenlandse bezorging + eventuele servicekosten + internationale verzending + toepasselijke belastingen en afhandeling. Voorkom dat je reeds inbegrepen kosten dubbel telt.</p>
+      </div>
+    </section>
+
+    <section class="wrap faq" aria-labelledby="faq-titel">
+      <div class="faq-layout">
+        <div class="faq-intro">
+          <p class="eyebrow">Vragen, direct beantwoord</p>
+          <h2 id="faq-titel">Voordat je verder klikt</h2>
+          <p>Wat een overzicht je wel vertelt, welke gegevens je zelf controleert en waar deze pagina voor bedoeld is.</p>
+        </div>
+
+        <div>
+          <details open>
+            <summary>Wat is een iTaoBuy spreadsheet?</summary>
+            <p>Een iTaoBuy spreadsheet is een verzameling productverwijzingen voor mensen die via iTaoBuy willen winkelen. Zo’n overzicht helpt bij vergelijken, maar bevestigt geen voorraad, kwaliteit of actuele prijs.</p>
+          </details>
+
+          <details>
+            <summary>Kan ik op deze pagina bestellen of een spreadsheet downloaden?</summary>
+            <p>Nee. Deze pagina bevat een keuzehulp en categorie-ingangen naar CAFANS. Er is hier geen betaalomgeving en geen downloadbare spreadsheet met gecontroleerde productgegevens.</p>
+          </details>
+
+          <details>
+            <summary>Hoe controleer ik of een productlink nog klopt?</summary>
+            <p>Vergelijk het product-ID, de verkoper, de afbeeldingen en de gekozen variant met je oorspronkelijke notitie. Een werkende link alleen bewijst niet dat hetzelfde artikel nog beschikbaar is.</p>
+          </details>
+
+          <details>
+            <summary>Bewijzen QC-foto’s dat een merkartikel echt is?</summary>
+            <p>Nee. QC-foto’s kunnen zichtbare details en afwijkingen tonen, maar bewijzen geen authenticiteit, samenstelling of duurzaamheid. Vraag om aanvullende herkomstinformatie als echtheid belangrijk is.</p>
+          </details>
+
+          <details>
+            <summary>Hoe vergelijk ik de totale kosten?</summary>
+            <p>Tel de productprijs, binnenlandse bezorging, eventuele servicekosten, internationale verzending en toepasselijke belastingen of afhandelingskosten op. Gebruik dezelfde bestemming en valuta en controleer welke bedragen al inbegrepen zijn.</p>
+          </details>
+
+          <details>
+            <summary>Is deze pagina officieel verbonden aan iTaoBuy of de afgebeelde merken?</summary>
+            <p>Nee. Dit is een onafhankelijke informatiepagina. De merkfoto’s zijn visuele referenties en betekenen geen officiële samenwerking, authenticiteitscontrole of beschikbaarheid via CAFANS.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap ending" aria-labelledby="verder-titel">
+      <div>
+        <h2 id="verder-titel">Neem je vragen mee naar je volgende vondst.</h2>
+        <p>Bekijk CAFANS en vergelijk de gegevens bij het product dat je aanspreekt.</p>
+      </div>
+      <a class="button" href="https://www.cafans.com">Verder bij CAFANS <span aria-hidden="true">&nbsp;↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="logo" href="https://www.cafans.com">cafans<span>.com</span></a>
+        <span>Nederlandstalige informatie · Onafhankelijke redactionele gids</span>
+      </div>
+      <p>iTaoBuy, Nike, Louis Vuitton, Gucci, Hermès en Dior zijn namen van hun respectieve rechthebbenden. Deze pagina heeft geen officiële band met deze partijen. Foto’s dienen ter visuele toelichting; er worden geen producttests, actuele voorraad of authenticiteitsgaranties aangeboden. Controleer actuele productgegevens en voorwaarden op de bestemming.</p>
+    </div>
+  </footer>
+</body>
+</html>
